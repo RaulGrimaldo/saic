@@ -1,0 +1,36 @@
+.logocdmx {
+    height: 50px;
+    width: 200px;
+    align-self: center;
+    margin-left: 160px;
+}
+
+.logodep {
+    height: 80px;
+    width: 260px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.estructura {
+    font-weight: bold; 
+    font-size:large;
+    text-align: center;
+}
+
+.logincard {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.login {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.paraph {
+    display: inline;
+}
