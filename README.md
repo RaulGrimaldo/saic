@@ -3,6 +3,7 @@
 
 Para modo desarrollo archivo .env en la carpeta saic con las siguientes variables de enterno
 
+
 En caso de usar basde de Mongo local
 ```shell
 MONGO_USERNAME=admin
@@ -16,6 +17,51 @@ En caso de usar MONGO ATLAS
 ```shell
 MONGO_ATLAS_PASSWORD=password
 ```
+en en /config el archivo keys el usuario y nombre de la base de datos
+```shell
+dbPassword = 'mongodb+srv://USERNAME:'+ encodeURIComponent(process.env.MONGO_ATLAS_PASSWORD) + '@cluster0-xmlrk.mongodb.net/nombredb?retryWrites=true&w=majority';
+```
+Insertar usuario default en base
+```shell
+db.users.insert({	
+	"secretaria":"SSC", "subsecretaria": "OM",
+      	"direcciongeneral": "DGF",
+	"direccion": "DGF",
+	"subdireccion": "DGF",
+	"jud": "DGF",
+	"ROL": "Admin",
+	"Nivel": 0,	
+	"username": "NOMBRE DE USUARIO",
+	"email": "email@gmail.com",
+	"password": "$2y$10$fZb8J5nXkiAK/xP8jEDqN.6HszvvCRxHNTrX3ZbDAdNLAFOMplvMW",
+	"active": true,
+	"phonenumber": 5584875487,
+        "baseURL": "admin",
+  	"activo": "SI",
+	"mirror": false,
+	"Espejo": "NO"
+
+})
+```
+```shell
+{"_id":{"$oid":"XXXXXXXXXXXXXXXX"},"secretaria":"SSC", "subsecretaria": "OM",
+      	"direcciongeneral": "DGF",
+	"direccion": "DGF",
+	"subdireccion": "DGF",
+	"jud": "DGF",
+	"ROL": "Admin",
+	"Nivel": 0,	
+	"username": "NOMBRE DE USUARIO",
+	"email": "email@gmail.com",
+	"password": "$2y$10$fZb8J5nXkiAK/xP8jEDqN.6HszvvCRxHNTrX3ZbDAdNLAFOMplvMW",
+	"active": true,
+	"phonenumber": 5584875487,
+        "baseURL": "admin",
+  	"activo": "SI",
+	"mirror": false,
+	"Espejo": "NO"
+}
+```
 Para notificaciones con correos de google
 ```shell
 SENDER_EMAIL=correo@correo.com
@@ -27,7 +73,7 @@ ALERT_EMAIL=correoalerta@correo.com
 ```
 Para JWT
 ```shell
-jwtSecret= mysecrettoken
+jwtSecret=mysecrettoken
 ```
 Para produccion
 ```shell
