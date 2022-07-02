@@ -21,7 +21,7 @@ en en /config el archivo keys el usuario y nombre de la base de datos
 ```shell
 dbPassword = 'mongodb+srv://USERNAME:'+ encodeURIComponent(process.env.MONGO_ATLAS_PASSWORD) + '@cluster0-xmlrk.mongodb.net/nombredb?retryWrites=true&w=majority';
 ```
-Insertar usuario default en base
+Insertar usuario default en base con contraseña defaul 123456 *CAMBIAR INMEDIATAMENTE*
 ```shell
 db.users.insert({	
 	"secretaria":"SSC", "subsecretaria": "OM",
