@@ -25,7 +25,7 @@ Insertar usuario default en base con contraseña defaul 123456 *CAMBIAR INMEDIAT
 ```shell
 db.users.insert({	
 	"secretaria":"SSC", "subsecretaria": "OM",
-      	"direcciongeneral": "DGF",
+    "direcciongeneral": "DGF",
 	"direccion": "DGF",
 	"subdireccion": "DGF",
 	"jud": "DGF",
@@ -36,7 +36,7 @@ db.users.insert({
 	"password": "$2y$10$fZb8J5nXkiAK/xP8jEDqN.6HszvvCRxHNTrX3ZbDAdNLAFOMplvMW",
 	"active": true,
 	"phonenumber": 5584875487,
-        "baseURL": "admin",
+    "baseURL": "admin",
   	"activo": "SI",
 	"mirror": false,
 	"Espejo": "NO"
@@ -45,7 +45,7 @@ db.users.insert({
 ```
 ```shell
 {"_id":{"$oid":"XXXXXXXXXXXXXXXX"},"secretaria":"SSC", "subsecretaria": "OM",
-      	"direcciongeneral": "DGF",
+    "direcciongeneral": "DGF",
 	"direccion": "DGF",
 	"subdireccion": "DGF",
 	"jud": "DGF",
