@@ -55,6 +55,7 @@ const AddRegisterModal = (
     setAddButton(false);
     return () => {
       setAddButton({});
+      setIsDisconnected({});
       window.removeEventListener('keydown', function (event) {
         
       });

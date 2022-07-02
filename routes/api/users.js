@@ -72,7 +72,7 @@ router.post(
       let direccion;
       let subdireccion;
 
-      const subDir = funcSuDir(jud);
+      const subDir = funcSubDir(jud);
 
       if(subDir){
         subdireccion = subDir[0];

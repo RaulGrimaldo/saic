@@ -1,6 +1,6 @@
 module.exports = {
   
-    metasDVC: function (month) {
+    metasDIR1: function (month) {
       //Aquí se ponen todas las metas
       var Metas = [
         "01|Organizaciones empresariales|176",
@@ -84,7 +84,7 @@ module.exports = {
       return metasMes;
     },
   
-    metasDCIyT: function (month) {
+    metasDIR2: function (month) {
       //Aquí se ponen todas las metas
       var Metas = [
         "01|Órganos de representación ciudadana, asociaciones vecinales y grupos vecinales|199",

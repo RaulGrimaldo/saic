@@ -43,7 +43,7 @@ const GoalsUserScreen = (
      
     let columns
 
-    if(user.direccion === "DGPC"){
+    if(user.direccion === "DGF"){
       columns = [
 
         { 

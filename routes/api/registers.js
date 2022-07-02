@@ -14,7 +14,7 @@ const { splitIdnombrepersona } = require('../../helpers/datosAsociados');
 const { obtenerQuincenaConFecha, fechaHora, quincenaNumActual} = require('../../helpers/dates');
 const { excluirfunc, etapa, unidadMedida, camai, descclasividad, nomclasividad } = require('../../helpers/backoffice');
 const { estrategia333, barrioadentro} = require('../../helpers/programsgob');
-const { metas, metasDVC, metasDCIyT} = require('../../helpers/metas');
+const { metas, metasDIR1, metasDIR2} = require('../../helpers/metas');
 const checkObjectId = require('../../middleware/checkObjectId');
 const nodemailer = require("nodemailer");
 
@@ -1748,10 +1748,10 @@ router.get('/goals',  auth, async (req, res) => {
       },]);
 
       let  metasMes;
-      if (user.direccion == "DVC") {
-        metasMes = metasDVC(month);
-      } else if (user.direccion == "DCIyT") {
-        metasMes = metasDCIyT(month);
+      if (user.direccion == "DIR1") {
+        metasMes = metasDIR1(month);
+      } else if (user.direccion == "DIR2") {
+        metasMes = metasDIR2(month);
       } else {
         metasMes = metas(month);
       }
@@ -1909,9 +1909,9 @@ router.post('/goals',  auth, async (req, res) => {
 
     let  metasMes;
     if (user.direccion == "DVC") {
-      metasMes = metasDVC(month);
-    } else if (user.direccion == "DCIyT") {
-      metasMes = metasDCIyT(month);
+      metasMes = metasDIR1(month);
+    } else if (user.direccion == "DIR2") {
+      metasMes = metasDIR2(month);
     } else {
       metasMes = metas(month);
     }

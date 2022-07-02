@@ -14,7 +14,7 @@ export function funcEstrategias(){
 export function funcTipos(direccion){
     let tipos = [];
 
-    if(direccion === "DCIyT"){
+    if(direccion === "DIR2"){
         tipos = [
           "Ordinaria remota",
           "Ordinaria presencial",
@@ -97,7 +97,7 @@ export function funcRubro(direccion, actividad){
             "Organizaciones empresariales",
             "Instituciones educativas",
         ];
-    }  else if((direccion === "DCIyT") && 
+    }  else if((direccion === "DIR2") && 
           (actividad !== "Feria de Seguridad" && actividad !== "Jornada de seguridad") ){
   
             rubros = [

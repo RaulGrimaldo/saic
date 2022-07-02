@@ -39,10 +39,12 @@ db.users.insert({
     "baseURL": "admin",
   	"activo": "SI",
 	"mirror": false,
-	"Espejo": "NO"
+	"espejo": "NO",
+	"numeroEmpleadoPlaca": "123456"
 
 })
 ```
+En Mongodb Atlas poner nombre de la base en la cadena de conexión y Collection users
 ```shell
 {"_id":{"$oid":"XXXXXXXXXXXXXXXX"},"secretaria":"SSC", "subsecretaria": "OM",
     "direcciongeneral": "DGF",
@@ -56,10 +58,11 @@ db.users.insert({
 	"password": "$2y$10$fZb8J5nXkiAK/xP8jEDqN.6HszvvCRxHNTrX3ZbDAdNLAFOMplvMW",
 	"active": true,
 	"phonenumber": 5584875487,
-        "baseURL": "admin",
+    "baseURL": "admin",
   	"activo": "SI",
 	"mirror": false,
-	"Espejo": "NO"
+	"espejo": "NO",
+	"numeroEmpleadoPlaca": "123456"
 }
 ```
 Para notificaciones con correos de google

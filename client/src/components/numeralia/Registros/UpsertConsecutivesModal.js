@@ -67,7 +67,7 @@ const UpsertConsecutivesModal = (
                         <div className="row">
                             <div className="col-8">
                                 <SelectInd
-                                    direccion="DGPC"
+                                    direccion="DGF"
                                     message="Área es requerido"
                                     placeholder="Seleccionar área"
                                     name="areafull"

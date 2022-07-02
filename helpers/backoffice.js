@@ -42,43 +42,42 @@ module.exports = {
     }
   },
   funcSubDir: function (jud) {
+    
+
     switch (jud) {
+      case "DGF":
+        return ["DGF", "DGF"];
+      case "JAOF":
+        return ["JAOF", "DPEF"];
+      case "JIICP":
+        return ["JIICP", "DPEF"];
+      case "JNCP":
+        return ["JNCP", "DPEF"];
+      case "DPEF":
+          return ["DPEF", "DPEF"];
+
+      case "JRF":
+        return ["JRF", "DCP"];
+      case "DCP":
+        return ["DCP", "DCP"];
+      case "JAP":
+            return ["SMP", "DCP"];
       case "JCP":
-        return ["SMP", "DCP"];
+            return ["SMP", "DCP"];
+      case "JEFRAB":
+            return ["SMP", "DCP"];
+
       case "SMP":
           return ["SMP", "DCP"];
-      case "JPCA":
-        return ["SCI", "DCIyT"];
-      case "JPCC":
-        return ["JPCC", "DCIyT"];
-      case "SCI":
-        return ["SCI", "DCIyT"];
-      case "SCT":
-        return ["SCT", "DCIyT"];
-      case "JPT":
-        return ["SCT", "DCIyT"];
-      case "JPV":
-        return ["SCT", "DCIyT"];1;
-      case "AOB":
-        return ["AOB", "DCIyT"];;
-      case "JVOS":
-        return ["SVO", "DVC"];
-      case "JVOE":
-        return ["SVO", "DVC"];
-      case "SVO":
-        return ["SVO", "DVC"];
-      case "JVIEMS":
-        return ["SVSE", "DVC"];
-      case "JVIEB":
-        return ["SVSE", "DVC"];
-      case "SVSE":
-        return ["SVSE", "DVC"];
-      case "DVC":
-        return ["DVC", "DVC"];
-      case "DCIyT":
-        return ["DCIyT", "DCIyT"];
-      case "DCIyT":
-        return ["DCIyT", "DCIyT"];
+
+      case "JCEP":
+          return ["SEP", "DCP"];
+  
+    case "JHC":
+      return ["SEP", "DCP"];
+  
+    case "SEP":
+                return ["SEP", "DCP"];
       default:
         return ["DGF", "DGF"];
     }
@@ -288,7 +287,7 @@ module.exports = {
         break;
       case "Seguimiento":
         observacionesActividad = "Reunión de trabajo con: COPACO/vecinos/otras instancias";
-        break;
+        break; 
       case "Simulacro":
         observacionesActividad = "Sensibilización";
         break;

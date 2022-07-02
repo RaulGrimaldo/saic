@@ -51,6 +51,7 @@ const UsersScreen = (
 
   const [registers_info, setRegistersInfo] = useState([]);
   const [isTableLoading, setIsTableLoading] = useState(true);
+  const [userDeleted, setUserDeleted] = useState(false);
   // Confirmación del mensaje pop
   const confirm = () => {
     // Ocultar mensaje pop
@@ -61,9 +62,7 @@ const UsersScreen = (
       // Eliminar usuario con el 
       deleteuser([userid[0]]);
       // Actualizar datos de los usuarios 
-      setTimeout(() => {
-        getusers();
-      }, 500);
+      setUserDeleted(true);
     } else if (userid[3] === 'EDIT') {
       // Mostrar modal de edición
       setVisibleEditModal(true);
@@ -96,6 +95,15 @@ const UsersScreen = (
     setIsTableLoading(true); 
   }, [visibleEditModal]);
 
+  useEffect(() => {
+    if(userDeleted){
+      getUs();
+    }
+    setTimeout(() => {
+      setUserDeleted(false); 
+      setIsTableLoading(true);
+    }, 500);
+  }, [userDeleted]);
   //api calls functions ====>
 
   //get cases function
@@ -134,33 +142,6 @@ const UsersScreen = (
     }, 1000);
 
   }
-
-  /* const columns = [
-    {
-      field: 'username',
-      title: 'Nombre',
-    },
-    {
-      field: 'ROL',
-      title: 'Rol',
-    },
-    {
-      field: 'jud',
-      title: 'JUD/SUB/DIR',
-    },
-    {
-      field: 'email',
-      title: 'Correo electrónico',
-    },
-    {
-      field: 'espejo',
-      title: 'Espejo',
-    },
-    {
-      field: 'activo',
-      title: 'Activo',
-    }
-  ]; */
 
   const columns = [
     {

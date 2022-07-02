@@ -206,7 +206,7 @@ const AddUserModal = ({ register, restart, restartuser, setVisible, visible }) =
                             <div className="col-md-6">
                                 <SelectDep
                                     form={form}
-                                    direccion="DGPC"
+                                    direccion="DGF"
                                     indMessage="Rol es requerido"
                                     indPlaceholder="Seleccionar rol"
                                     indName="ROL"
