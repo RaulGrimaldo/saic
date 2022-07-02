@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/RaulGrimaldo/saic">
-        <img alt="Logo" src="https://i.ibb.co/FH4P5d2/saic.png" width="150" />
+        <img alt="Logo" src="https://i.ibb.co/FH4P5d2/saic.png" />
   </a>
   <h1 align="center">
     Ant Table Extensions
