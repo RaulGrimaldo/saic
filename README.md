@@ -71,6 +71,8 @@ por:
 var blob = new Blob(['\ufeff' + csv], {type: 'text/csv;charset=utf-8'});
 ```
 
+para desarrollo en la vista de documento cambiar el puerto del 8080 al 3000 y viceversa para producción en RegisterScreen.
+
 ## Demos
 
 [Demos](https://url)
