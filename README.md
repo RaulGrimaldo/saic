@@ -30,7 +30,7 @@ en en /config el archivo keys el usuario y nombre de la base de datos
 ```shell
 dbPassword = 'mongodb+srv://USERNAME:'+ encodeURIComponent(process.env.MONGO_ATLAS_PASSWORD) + '@cluster0-xmlrk.mongodb.net/nombredb?retryWrites=true&w=majority';
 ```
-Insertar usuario default en base con contraseña defaul 123456 *CAMBIAR INMEDIATAMENTE*
+Insertar usuario default en base con contraseña defaul *CAMBIAR INMEDIATAMENTE*
 ```shell
 db.users.insert({	
 	"secretaria":"SSC", "subsecretaria": "OM",
@@ -42,7 +42,7 @@ db.users.insert({
 	"Nivel": 0,	
 	"username": "NOMBRE DE USUARIO",
 	"email": "email@gmail.com",
-	"password": "$2y$10$fZb8J5nXkiAK/xP8jEDqN.6HszvvCRxHNTrX3ZbDAdNLAFOMplvMW",
+	"password": "chain",
 	"active": true,
 	"phonenumber": 5584875487,
     "baseURL": "admin",
